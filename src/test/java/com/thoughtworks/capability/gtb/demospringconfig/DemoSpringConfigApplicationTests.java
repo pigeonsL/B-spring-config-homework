@@ -11,9 +11,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
+@SpringBootTest(properties = "levelNumber=0")
 @AutoConfigureMockMvc
-@TestPropertySource(properties = "levelNumber=2")
 class DemoSpringConfigApplicationTests {
 
 	@Autowired
